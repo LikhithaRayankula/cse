@@ -1,0 +1,45 @@
+
+public class Person {
+    protected String name;
+	public Person(String name) {
+	this.name=name;
+	}
+}
+
+public class Employee extends Person{
+	private double annualSalary;
+	private int yearOfJoining;
+	private String national;
+	public Employee(String name, double annualSalary, int yearOfJoining, String national) {
+		super(name);
+		this.annualSalary = annualSalary;
+		this.yearOfJoining = yearOfJoining;
+		this.national = national;
+	}
+	public double getAnnualSalary() {
+		return annualSalary;
+	}
+	public int getYearOfJoining() {
+		return yearOfJoining;
+	}
+	public String getNational() {
+		return national;
+	}
+}
+
+public class TestEmployee {
+	public static void main(String args[]) {
+
+		Employee employee = new Employee("Ram", 60000.00, 2023, "A888B901");
+
+		System.out.println("Employee name         : " + employee.name);
+
+		System.out.println("Employee salary       : " + employee.getAnnualSalary());
+
+		System.out.println("year of joining       : " + employee.getYearOfJoining());
+
+		System.out.println("National Insurance no : " + employee.getNational());
+
+	}
+
+}
