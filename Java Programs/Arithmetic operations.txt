@@ -1,0 +1,27 @@
+package Arithmetic;
+
+public class ArithmeticOperations {
+	public int addition(int x,int y) {
+		return x+y;
+	}
+	public int subtraction(int x,int y) {
+		return x-y;
+	}
+	public int multiplication(int x,int y) {
+		return x*y;
+	}
+	public int division(int x,int y) {
+		return x/y;
+	}
+}
+
+import Arithmetic.ArithmeticOperations;
+public class Calculate {
+	public static void main(String[] args) {
+	ArithmeticOperations ao =new ArithmeticOperations();
+	System.out.println("Addition: "+ao.addition(5, 4));
+	System.out.println("Subtraction: "+ao.subtraction(5, 4));
+	System.out.println("Multiplication: "+ao.multiplication(5, 4));
+	System.out.println("Division: "+ao.division(25, 5));
+	}
+}
